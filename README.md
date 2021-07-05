@@ -36,18 +36,7 @@ SET QUOTED_IDENTIFIER ON
 
 GO
 
-CREATE TABLE [dbo].[cm_contact](
-	[Id] [int] IDENTITY(1,1) NOT NULL,
-	[FName] [nvarchar](100) NOT NULL,
-	[LName] [nvarchar](100) NOT NULL,
-	[Email] [nvarchar](50) NOT NULL,
-	[PhoneNumber] [nvarchar](50) NOT NULL,
-	[Status] [nchar](1) NOT NULL,
- CONSTRAINT [PK_cm_contact] PRIMARY KEY CLUSTERED 
-(
-	[Id] ASC
-)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
-) ON [PRIMARY]
+CREATE TABLE [dbo].[cm_product]( [Id] [int] IDENTITY(1,1) NOT NULL, [Name] nvarchar NOT NULL, [description] nvarchar(max) NOT NULL, [price] DECIMAL(10,2) NOT NULL, [Status] nchar NOT NULL, CONSTRAINT [PK_cm_contact] PRIMARY KEY CLUSTERED ( [Id] ASC )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY] ) ON [PRIMARY]
 
 GO
 
