@@ -26,7 +26,7 @@ ContactMangement/Applications/CM.WebApi/Web.config
 
 Also run the following query to create database table
 
-/****** Object:  Table [dbo].[cm_contact]  ******/
+/****** Object:  Table [dbo].[cm_product]  ******/
 
 SET ANSI_NULLS ON
 
