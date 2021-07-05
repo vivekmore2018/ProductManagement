@@ -25,7 +25,7 @@ namespace CM.DataAccess
                                       FROM [dbo].[cm_product]").ToList();
 
         }
-        public Contact GetById(int id)
+        public Product GetById(int id)
         {
             return _cn.Query<Product>(@"SELECT [Id] AS Id,
                                           [name] AS Name,
@@ -33,7 +33,7 @@ namespace CM.DataAccess
                                           [price] AS Price,
                                           CASE WHEN [Status]  = 'Y' THEN 'true' ELSE 'false' END AS Status
                                       FROM [dbo].[cm_product]
-                                      WHERE Id=@Id", new { Id = id }).FirstOrDefault();
+                                      WHERE Id=@Id AND [Status]  = 'Y' ", new { Id = id }).FirstOrDefault();
         }
         public int Update(Product product)
         {
@@ -62,7 +62,7 @@ namespace CM.DataAccess
                 Id = id
             });
         }
-        public int AddContact(Product product)
+        public int Add(Product product)
         {
             string insertQuery = @"
                 INSERT INTO [dbo].[cm_product] ([name],[description],[price],[STATUS])
@@ -73,10 +73,10 @@ namespace CM.DataAccess
                 Name = product.Name,
                 Description = product.Description,
                 Price = product.Price,
-                Status = contact.Status ? 'Y' : 'N'
+                Status = product.Status ? 'Y' : 'N'
             }).Single();
         }
-        public int DeleteContact(int id)
+        public int Deleteproduct(int id)
         {
             string deleteQuery = @"
                 DELETE from [dbo].[cm_product] WHERE [Id]= @Id ";

@@ -1,0 +1,26 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DocumentationFile>CM.CoreWebAPI.xml</DocumentationFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.1.4" />
+    <PackageReference Include="Swashbuckle.AspNetCore.SwaggerUI" Version="6.1.4" />
+    <PackageReference Include="Swashbuckle.Core" Version="5.6.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Core\CM.Interface.Business\CM.Interface.Business.csproj" />
+    <ProjectReference Include="..\Core\CM.Interface.DataAccess\CM.Interface.DataAccess.csproj" />
+    <ProjectReference Include="..\Core\CM.Models\CM.Models.csproj" />
+    <ProjectReference Include="..\Infrastructure\CM.Business\CM.Business.csproj" />
+    <ProjectReference Include="..\Infrastructure\CM.DataAccess\CM.DataAccess.csproj" />
+  </ItemGroup>
+
+
+</Project>

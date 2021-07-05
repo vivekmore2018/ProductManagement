@@ -32,8 +32,8 @@ namespace CM.WebApi
             var DatabaseConnectionString = ConfigurationManager.ConnectionStrings["CMconnection"].ConnectionString;
             container.RegisterInstance<IDbConnection>(new SqlConnection(DatabaseConnectionString));
 
-            container.RegisterType<IContactManager, ContactManager>();
-            container.RegisterType<IContactRepository, ContactRepository>();
+            container.RegisterType<IProductManager, ProductManager>();
+            container.RegisterType<IProductRepository, ProductRepository>();
             config.DependencyResolver = new ServiceResolver(container);
 
             var enableCorsAttribute = new EnableCorsAttribute("*",

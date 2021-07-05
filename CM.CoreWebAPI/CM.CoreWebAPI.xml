@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>CM.CoreWebAPI</name>
+    </assembly>
+    <members>
+        <member name="M:CM.CoreWebAPI.Controllers.ProductController.Get">
+            <summary>  
+            Get All Product Details  
+            </summary>  
+            <response code="200">Record found</response>
+            <response code="400">Bad request</response>
+            <response code="404">Not Found</response>
+        </member>
+        <member name="M:CM.CoreWebAPI.Controllers.ProductController.Get(System.Int32)">
+            <summary>
+            Get Single Product if found
+            </summary>
+            <param name="Id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CM.CoreWebAPI.Controllers.ProductController.Create(CM.Models.Product)">
+            <summary>  
+            Create Product in to database
+            </summary>  
+            <response code="200">Created</response>
+            <response code="400">Bad request</response>
+        </member>
+        <member name="M:CM.CoreWebAPI.Controllers.ProductController.Update(CM.Models.Product)">
+            <summary>  
+            Create Product to database
+            </summary>  
+            <response code="200">Updated</response>
+            <response code="400">Bad request</response>
+        </member>
+        <member name="M:CM.CoreWebAPI.Controllers.ProductController.Delete(System.Int32)">
+            <summary>
+            Delete product by Id
+            </summary>
+            <param name="Id"></param>
+            <returns></returns>
+            <response code="200">Product deleted</response>
+            <response code="404">Not found</response>
+        </member>
+    </members>
+</doc>

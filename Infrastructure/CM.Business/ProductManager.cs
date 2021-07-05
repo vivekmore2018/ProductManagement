@@ -9,9 +9,9 @@ namespace CM.Business
     public class ProductManager : IProductManager
     {
         private IProductRepository _productRepository;
-        public ProductManager(IProductRepository contactRepository)
+        public ProductManager(IProductRepository productRepository)
         {
-            _productRepository = contactRepository;
+            _productRepository = productRepository;
         }
 
         public IEnumerable<Product> GetAll()
@@ -34,16 +34,16 @@ namespace CM.Business
         public BusinessResult<Product> Add(Product product)
         {
             BusinessResult<Product> result = new BusinessResult<Product>();
-            if (Product == null)
+            if (product == null)
             {
-                result.Errors.Add("Invalid contact object");
+                result.Errors.Add("Invalid product object");
                 return result;
             }
-            var id = _productRepository.AddProduct(contact);
+            var id = _productRepository.Add(product);
             if (id > 0)
             {
-                contact.Id = id;
-                result.Value = contact;
+                product.Id = id;
+                result.Value = product;
             }
 
             return result;
@@ -51,7 +51,7 @@ namespace CM.Business
 
         public int Delete(int id)
         {
-            return _productRepository.DeleteContact(id);
+            return _productRepository.Deleteproduct(id);
         }
     }
 }

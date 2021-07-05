@@ -1,0 +1,192 @@
+{
+  "format": 1,
+  "restore": {
+    "D:\\Vivek\\Project\\productManagement\\CM.CoreWebAPI\\CM.CoreWebAPI.csproj": {}
+  },
+  "projects": {
+    "D:\\Vivek\\Project\\productManagement\\CM.CoreWebAPI\\CM.CoreWebAPI.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Vivek\\Project\\productManagement\\CM.CoreWebAPI\\CM.CoreWebAPI.csproj",
+        "projectName": "CM.CoreWebAPI",
+        "projectPath": "D:\\Vivek\\Project\\productManagement\\CM.CoreWebAPI\\CM.CoreWebAPI.csproj",
+        "packagesPath": "C:\\Users\\Vivek\\.nuget\\packages\\",
+        "outputPath": "D:\\Vivek\\Project\\productManagement\\CM.CoreWebAPI\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Microsoft\\Xamarin\\NuGet\\"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Vivek\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {
+              "D:\\Vivek\\Project\\productManagement\\Core\\CM.Interface.Business\\CM.Interface.Business.csproj": {
+                "projectPath": "D:\\Vivek\\Project\\productManagement\\Core\\CM.Interface.Business\\CM.Interface.Business.csproj"
+              },
+              "D:\\Vivek\\Project\\productManagement\\Core\\CM.Interface.DataAccess\\CM.Interface.DataAccess.csproj": {
+                "projectPath": "D:\\Vivek\\Project\\productManagement\\Core\\CM.Interface.DataAccess\\CM.Interface.DataAccess.csproj"
+              },
+              "D:\\Vivek\\Project\\productManagement\\Core\\CM.Models\\CM.Models.csproj": {
+                "projectPath": "D:\\Vivek\\Project\\productManagement\\Core\\CM.Models\\CM.Models.csproj"
+              },
+              "D:\\Vivek\\Project\\productManagement\\Infrastructure\\CM.Business\\CM.Business.csproj": {
+                "projectPath": "D:\\Vivek\\Project\\productManagement\\Infrastructure\\CM.Business\\CM.Business.csproj"
+              },
+              "D:\\Vivek\\Project\\productManagement\\Infrastructure\\CM.DataAccess\\CM.DataAccess.csproj": {
+                "projectPath": "D:\\Vivek\\Project\\productManagement\\Infrastructure\\CM.DataAccess\\CM.DataAccess.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "dependencies": {
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[6.1.4, )"
+            },
+            "Swashbuckle.AspNetCore.SwaggerUI": {
+              "target": "Package",
+              "version": "[6.1.4, )"
+            },
+            "Swashbuckle.Core": {
+              "target": "Package",
+              "version": "[5.6.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.302\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\Vivek\\Project\\productManagement\\Core\\CM.Interface.Business\\CM.Interface.Business.csproj": {
+      "restore": {
+        "projectUniqueName": "D:\\Vivek\\Project\\productManagement\\Core\\CM.Interface.Business\\CM.Interface.Business.csproj",
+        "projectName": "CM.Interface.Business",
+        "projectPath": "D:\\Vivek\\Project\\productManagement\\Core\\CM.Interface.Business\\CM.Interface.Business.csproj",
+        "frameworks": {
+          "net452": {
+            "projectReferences": {
+              "D:\\Vivek\\Project\\productManagement\\Core\\CM.Models\\CM.Models.csproj": {
+                "projectPath": "D:\\Vivek\\Project\\productManagement\\Core\\CM.Models\\CM.Models.csproj"
+              }
+            }
+          }
+        }
+      },
+      "frameworks": {
+        "net452": {}
+      }
+    },
+    "D:\\Vivek\\Project\\productManagement\\Core\\CM.Interface.DataAccess\\CM.Interface.DataAccess.csproj": {
+      "restore": {
+        "projectUniqueName": "D:\\Vivek\\Project\\productManagement\\Core\\CM.Interface.DataAccess\\CM.Interface.DataAccess.csproj",
+        "projectName": "CM.Interface.DataAccess",
+        "projectPath": "D:\\Vivek\\Project\\productManagement\\Core\\CM.Interface.DataAccess\\CM.Interface.DataAccess.csproj",
+        "frameworks": {
+          "net452": {
+            "projectReferences": {
+              "D:\\Vivek\\Project\\productManagement\\Core\\CM.Models\\CM.Models.csproj": {
+                "projectPath": "D:\\Vivek\\Project\\productManagement\\Core\\CM.Models\\CM.Models.csproj"
+              }
+            }
+          }
+        }
+      },
+      "frameworks": {
+        "net452": {}
+      }
+    },
+    "D:\\Vivek\\Project\\productManagement\\Core\\CM.Models\\CM.Models.csproj": {
+      "restore": {
+        "projectUniqueName": "D:\\Vivek\\Project\\productManagement\\Core\\CM.Models\\CM.Models.csproj",
+        "projectName": "CM.Models",
+        "projectPath": "D:\\Vivek\\Project\\productManagement\\Core\\CM.Models\\CM.Models.csproj"
+      },
+      "frameworks": {
+        "net452": {}
+      }
+    },
+    "D:\\Vivek\\Project\\productManagement\\Infrastructure\\CM.Business\\CM.Business.csproj": {
+      "restore": {
+        "projectUniqueName": "D:\\Vivek\\Project\\productManagement\\Infrastructure\\CM.Business\\CM.Business.csproj",
+        "projectName": "CM.Business",
+        "projectPath": "D:\\Vivek\\Project\\productManagement\\Infrastructure\\CM.Business\\CM.Business.csproj",
+        "frameworks": {
+          "net452": {
+            "projectReferences": {
+              "D:\\Vivek\\Project\\productManagement\\Core\\CM.Interface.Business\\CM.Interface.Business.csproj": {
+                "projectPath": "D:\\Vivek\\Project\\productManagement\\Core\\CM.Interface.Business\\CM.Interface.Business.csproj"
+              },
+              "D:\\Vivek\\Project\\productManagement\\Core\\CM.Interface.DataAccess\\CM.Interface.DataAccess.csproj": {
+                "projectPath": "D:\\Vivek\\Project\\productManagement\\Core\\CM.Interface.DataAccess\\CM.Interface.DataAccess.csproj"
+              },
+              "D:\\Vivek\\Project\\productManagement\\Core\\CM.Models\\CM.Models.csproj": {
+                "projectPath": "D:\\Vivek\\Project\\productManagement\\Core\\CM.Models\\CM.Models.csproj"
+              }
+            }
+          }
+        }
+      },
+      "frameworks": {
+        "net452": {}
+      }
+    },
+    "D:\\Vivek\\Project\\productManagement\\Infrastructure\\CM.DataAccess\\CM.DataAccess.csproj": {
+      "restore": {
+        "projectUniqueName": "D:\\Vivek\\Project\\productManagement\\Infrastructure\\CM.DataAccess\\CM.DataAccess.csproj",
+        "projectName": "CM.DataAccess",
+        "projectPath": "D:\\Vivek\\Project\\productManagement\\Infrastructure\\CM.DataAccess\\CM.DataAccess.csproj",
+        "frameworks": {
+          "net452": {
+            "projectReferences": {
+              "D:\\Vivek\\Project\\productManagement\\Core\\CM.Interface.DataAccess\\CM.Interface.DataAccess.csproj": {
+                "projectPath": "D:\\Vivek\\Project\\productManagement\\Core\\CM.Interface.DataAccess\\CM.Interface.DataAccess.csproj"
+              },
+              "D:\\Vivek\\Project\\productManagement\\Core\\CM.Models\\CM.Models.csproj": {
+                "projectPath": "D:\\Vivek\\Project\\productManagement\\Core\\CM.Models\\CM.Models.csproj"
+              }
+            }
+          }
+        }
+      },
+      "frameworks": {
+        "net452": {}
+      }
+    }
+  }
+}

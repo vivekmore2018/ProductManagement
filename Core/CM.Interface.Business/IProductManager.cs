@@ -6,10 +6,10 @@ namespace CM.Interface.Business
     public interface IProductManager
     {
         IEnumerable<Product> GetAll();
-        Contact GetById(int id);
-        BusinessResult<Product> Update(Product contact);
+        Product GetById(int id);
+        BusinessResult<Product> Update(Product product);
         int ChangeStatus(int id, bool status);
-        BusinessResult<Product> Add(Product contact);
+        BusinessResult<Product> Add(Product product);
         int Delete(int id);
     }
 }
